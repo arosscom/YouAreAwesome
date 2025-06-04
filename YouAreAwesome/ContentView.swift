@@ -27,6 +27,11 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.light)
                 .foregroundStyle(.blue)
+            
+            Text("So is This !")
+                .font(.largeTitle)
+                .fontWeight(.light)
+                .foregroundStyle(.green)
         }
         .padding()
     }
