@@ -12,7 +12,6 @@ struct ContentView: View {
         
         
         VStack {
-
             Image(systemName: "swift")
                 .resizable()
                 .scaledToFit()
