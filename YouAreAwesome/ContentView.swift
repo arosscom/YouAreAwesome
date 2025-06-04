@@ -12,12 +12,13 @@ struct ContentView: View {
         
         
         VStack {
+            
             Image(systemName: "swift")
                 .resizable()
                 .scaledToFit()
                 .foregroundStyle(.orange)
             
-            Text("I am an app developer  !")
+            Text("I am an App developer !")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .foregroundStyle(.red)
