@@ -18,10 +18,15 @@ struct ContentView: View {
                 .scaledToFit()
                 .foregroundStyle(.orange)
             
-            Text("I am an app developer !")
+            Text("I am an app developer  !")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .foregroundStyle(.red)
+            
+            Text("This is a trial change")
+                .font(.largeTitle)
+                .fontWeight(.light)
+                .foregroundStyle(.blue)
         }
         .padding()
     }
