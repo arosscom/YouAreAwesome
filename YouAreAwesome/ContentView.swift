@@ -35,8 +35,8 @@ struct ContentView: View {
             Button(buttonText) {
                 let message1 = "You are Awesome!"
                 let message2 = "You are Great!"
-                let imageString2 = "hand.thumbsup"
-                let imageString1 = "sun.max.fill"
+                let imageString1 = "hand.thumbsup"
+                let imageString2 = "sun.max.fill"
                 
                 if message == message1 {
                     message = message2
