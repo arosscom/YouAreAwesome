@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var messages = ["You are Awesome!", "You are Great!",
+                                   "Fabulous? That's You!", "Sum Maximus !",
+                                   "I am the Greatest !"]
     @State private var message = ""
-    @State private var buttonText = "Press Me"
+    
+    @State private var buttonText = "Show Message"
     @State private var imageName = ""
+    @State private var imageNumber = 0
     
     var body: some View {
         
@@ -33,12 +38,14 @@ struct ContentView: View {
             Spacer()
             
             Button(buttonText) {
-                let message1 = "You are Awesome!"
-                let message2 = "You are Great!"
- 
-                message = (message == message1 ? message2 : message1)
-                imageName = (message == message1 ? "image0" : "image1")
-            }
+                message = messages[imageNumber]
+                imageName = "image\(imageNumber)"
+                
+                imageNumber += 1
+                if imageNumber ==  messages.count {
+                    imageNumber = 0
+                }
+             }
             .buttonStyle(.borderedProminent)
             .font(.title2)
 
