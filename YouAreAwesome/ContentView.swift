@@ -57,7 +57,7 @@ struct ContentView: View {
                 .animation(.default, value: imageName)
 
             Spacer()
-            
+                        
             Button(buttonText) {
                 
                 lastMessageNumber = messageNumber
